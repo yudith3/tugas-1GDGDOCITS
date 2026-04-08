@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuhara – Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header class="hero-header">
+        <div class="header-content">
+            <h1>Yuhara – Workshop Dasar Web</h1>
+            <p class="tagline">
+                Pelajari HTML, CSS, dan JavaScript dengan membangun proyek mini nyata.
+            </p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="card info-card">
+            <h2>Tentang Acara</h2>
+            <p>
+                Dalam sesi ini, kita akan mempelajari dasar web dan membangun halaman pendaftaran acara sederhana menggunakan HTML, CSS, dan JavaScript.
+            </p>
+        </section>
+        <section class="card info-card">
+            <h2>Topik yang Dibahas</h2>
+            <ul>
+                <li>HTML: struktur dasar dan elemen semantik</li>
+                <li>CSS: selektor, layout, dan styling</li>
+                <li>JavaScript: DOM, event, fungsi, dan array</li>
+            </ul>
+        </section>
+        <section class="card form-card">
+            <h2>Pendaftaran Acara</h2>
+            <form id="registration-form" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input id="name" name="name" type="text" placeholder="Masukkan nama lengkap Anda" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Masukkan alamat email" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="level">Tingkat Pengalaman</label>
+                        <select id="level" name="level">
+                            <option value="Pemula">Pemula</option>
+                            <option value="Menengah">Menengah</option>
+                            <option value="Mahir">Mahir</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label for="join-wa">
+                            <input id="join-wa" name="join-wa" type="checkbox" />
+                            Bergabung ke grup WhatsApp
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">
+                    Daftar Sekarang
+                </button>
+                <p id="error-message" class="message error"></p>
+                <p id="success-message" class="message success"></p>
+            </form>
+        </section>
+        <section class="card participants-card">
+            <h2>Peserta Terdaftar</h2>
+            <div id="participants-list" class="participants-grid">
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>Dibuat oleh Yuhara Workshop Dasar Web.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
